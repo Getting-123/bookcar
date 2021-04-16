@@ -16,6 +16,13 @@
     }
 </script>
 
+<script>
+
+    function jump_1(){
+        window.location.href="show.jsp";
+    }
+</script>
+
 
 欢迎进入历史图书区
 <br>

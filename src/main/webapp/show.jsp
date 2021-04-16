@@ -10,6 +10,11 @@
 <html>
 <head>
     <title>Title</title>
+    <script>
+        function jump_1(){
+            window.location.href="clear.jsp";
+        }
+    </script>
 </head>
 <body>
 <%!
@@ -29,7 +34,7 @@ ${w}<a href="delete.jsp?num=<%=i%>">删除</a><br>
     %>
 </c:forEach>
 
-
+<div><input type="button" value="清空购物车" onclick="jump_1()"></div>
 
 </body>
 </html>
