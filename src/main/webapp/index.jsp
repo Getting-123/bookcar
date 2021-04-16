@@ -18,9 +18,12 @@
 
 
 欢迎进入历史图书区
-
-
-
+<br>
+<jsp:useBean id="time" scope="request" class="java.util.Date"/>
+${time.toLocaleString()}
+<%
+response.setHeader("refresh","1");
+%>
 <table>
     <tr>
         <th>书名</th>

@@ -19,7 +19,11 @@
 
 
 <%!
+<<<<<<< HEAD
     ArrayList <String>set=new ArrayList<String>();
+=======
+    ArrayList <String>set=new ArrayList<>();
+>>>>>>> meixuesong
 %>
 
 <%

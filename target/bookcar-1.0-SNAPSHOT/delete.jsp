@@ -20,8 +20,6 @@
     arr.remove(i);
     out.println(i);
     response.sendRedirect("show.jsp");
-
-
 %>
 
 

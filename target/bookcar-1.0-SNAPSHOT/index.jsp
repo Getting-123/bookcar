@@ -6,38 +6,24 @@
     <title>历史图书</title>
 
 
-    <script>
-        function jump_1(){
-            window.location.href="show.jsp";
-        }
-
-    </script>
-
-
 </head>
 <body>
 
 <script>
 
     function jump_2(){
-        <%!
-           ArrayList arr;
-           %>
-
-        <%
-            arr= (ArrayList) session.getAttribute("set");
-            response.sendRedirect("index.jsp?num=1");
-        %>
-
-        alert("库存数量:"+a);
+        alert("库存数量:"+1);
     }
 </script>
 
 
 欢迎进入历史图书区
-
-
-
+<br>
+<jsp:useBean id="time" scope="request" class="java.util.Date"/>
+${time.toLocaleString()}
+<%
+response.setHeader("refresh","1");
+%>
 <table>
     <tr>
         <th>书名</th>
@@ -80,7 +66,7 @@
 
 <div><input type="button" value="查看购物车" onclick="jump_1()"></div>
 
-<div><input type="button" value="查看库存数量" onclick="jump_2()"></div>
+
 
 
 </body>
